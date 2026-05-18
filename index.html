@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test DAW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <div class="container">
+
+      <header class="hero">
+        <div>
+          <span class="eyebrow">Examen DAW</span>
+          <h1>Test de Asignaturas</h1>
+          <p>Selecciona una asignatura y responde las preguntas con el estilo de un panel moderno.</p>
+        </div>
+      </header>
+
+      <div class="card main-card">
+
+        <!-- MENU PRINCIPAL -->
+        <div id="menu" class="menu-panel">
+          <h2>Selecciona una asignatura</h2>
+
+          <div class="grid-buttons">
+            <button onclick="cargarAsignatura('cliente')">
+              Desarrollo Web Entorno Cliente
+            </button>
+
+            <button onclick="cargarAsignatura('servidor')">
+              Desarrollo Web Entorno Servidor
+            </button>
+
+            <button onclick="cargarAsignatura('despliegue')">
+              Despliegue de Aplicaciones Web
+            </button>
+
+            <button onclick="cargarAsignatura('interfaces')">
+              Diseño de Interfaces Web
+            </button>
+
+            <button onclick="cargarAsignatura('ingles')">
+              Inglés
+            </button>
+
+            <button onclick="cargarAsignatura('hlc')">
+              HLC
+            </button>
+          </div>
+        </div>
+
+        <!-- TEST -->
+        <div id="test" class="oculto test-panel">
+
+          <div class="panel-header">
+            <div>
+              <p class="label">Asignatura</p>
+              <h2 id="tituloAsignatura"></h2>
+            </div>
+            <div class="label secondary" id="contador"></div>
+          </div>
+
+          <div class="pregunta-card">
+            <h3 id="pregunta"></h3>
+
+            <div id="opciones" class="opciones-grid"></div>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn primary" onclick="corregir()">Corregir</button>
+            <button class="btn secondary" onclick="reiniciarEstadisticas()">Reiniciar estadísticas</button>
+          </div>
+
+          <div id="estadisticas" class="stats-row oculto">
+            <span class="stat success">✅ Aciertos: <strong id="aciertos">0</strong></span>
+            <span class="stat danger">❌ Fallos: <strong id="fallos">0</strong></span>
+            <span class="stat">🎯 Porcentaje: <strong id="porcentaje">0%</strong></span>
+            <span class="stat">📄 Total: <strong id="total">0</strong> preguntas</span>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn ghost" onclick="anteriorPregunta()">Anterior</button>
+            <button class="btn ghost" onclick="siguientePregunta()">Siguiente</button>
+            <button class="btn ghost" onclick="volverMenu()">Volver al menú</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="listaPreguntasCard" class="card question-list oculto">
+        <div class="list-header">
+          <h2>Listado de preguntas</h2>
+          <input id="searchInput" type="search" placeholder="Busca aquí..." />
+        </div>
+        <div id="listaPreguntas" class="pregunta-list"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
