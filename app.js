@@ -735,6 +735,204 @@ const tests = {
         "tail -f /var/log/vsftpd.log."
       ],
       correcta: 2
+    },
+    {
+      pregunta: "¿Qué instrucción se usa para recuperar datos de una base de datos?",
+      opciones: [
+        "INSERT",
+        "SELECT",
+        "DELETE"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué archivo es clave en la configuración inicial de un servidor OpenLDAP?",
+      opciones: [
+        "slapd.conf.",
+        "ldap.conf.",
+        "bind9.conf."
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué protocolo es utilizado para centralizar la autenticación en servidores de directorios?",
+      opciones: [
+        "LDAP.",
+        "FTP.",
+        "HTTP."
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué plataforma ofrece funcionalidad de edición colaborativa en Markdown?",
+      opciones: [
+        "Jira.",
+        "Prometheus.",
+        "HackMD."
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué archivo es clave para configurar un proyecto en Docusaurus?",
+      opciones: [
+        "docusaurus.config.js.",
+        "config.xml.",
+        "settings.json."
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué función se usa para sanear datos de entrada?",
+      opciones: [
+        "header()",
+        "htmlentities()",
+        "echo()"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué comando de Git se utiliza para seleccionar y aplicar un commit específico de otra rama?",
+      opciones: [
+        "git merge.",
+        "git cherry-pick.",
+        "git rebase."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué ventaja tiene utilizar índices en OpenLDAP?",
+      opciones: [
+        "Reducir el tamaño de la base de datos.",
+        "Simplificar la configuración inicial.",
+        "Facilitar búsquedas rápidas y eficientes."
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué tipo de usuario permite acceso FTP sin credenciales?",
+      opciones: [
+        "Virtual.",
+        "Anónimo.",
+        "Local."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué puerto por defecto utiliza FTP para el control de conexión?",
+      opciones: [
+        "80.",
+        "21.",
+        "22."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Cuál es el puerto por defecto de MySQL?",
+      opciones: [
+        "1433",
+        "3306",
+        "8080"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué módulo permite utilizar un servidor LDAP como backend para autenticación?",
+      opciones: [
+        "ldap-backend.",
+        "pam_ldap.",
+        "auth_ldap."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué cláusula se utiliza para filtrar filas en SQL?",
+      opciones: [
+        "ORDER BY",
+        "WHERE",
+        "JOIN"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué contiene la superglobal $_POST?",
+      opciones: [
+        "Datos enviados por POST",
+        "Información del servidor",
+        "Parámetros de la URL"
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué archivo almacena la lista de usuarios denegados en vsftpd?",
+      opciones: [
+        "/etc/vsftpd.chroot_list.",
+        "/etc/vsftpd.user_list.",
+        "/etc/vsftpd.banned_emails."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué herramienta se utiliza para gestionar flujos de trabajo de CI/CD en GitHub?",
+      opciones: [
+        "GitHub Flow.",
+        "Jenkins.",
+        "GitHub Actions."
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué hace la función die() en PHP?",
+      opciones: [
+        "Reinicia el navegador",
+        "Cierra la sesión",
+        "Finaliza la ejecución del script"
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Para qué sirve bindParam() en PDO?",
+      opciones: [
+        "Obtener todos los resultados",
+        "Enlazar un valor a un parámetro",
+        "Ejecutar una consulta"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué funcionalidad ofrece 'git stash' en el flujo de trabajo de Git?",
+      opciones: [
+        "Crear un nuevo branch a partir de los cambios actuales.",
+        "Guardar temporalmente cambios no confirmados.",
+        "Fusionar ramas automáticamente."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué ventaja tiene el uso de Git Hooks en un repositorio?",
+      opciones: [
+        "Automatiza tareas como pruebas antes de los commits.",
+        "Mejora la visibilidad del repositorio.",
+        "Incrementa la capacidad de almacenamiento."
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué implica habilitar la opción chroot_local_user=YES en vsftpd.conf?",
+      opciones: [
+        "Permite que los usuarios locales accedan a todos los directorios.",
+        "Enjaula a los usuarios locales en sus directorios personales.",
+        "Deshabilita los accesos anónimos al servidor."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué significa DSN en el contexto de PDO?",
+      opciones: [
+        "Dirección del Servidor de Nombres",
+        "Documento de Sistema de Nombres",
+        "Nombre de Fuente de Datos"
+      ],
+      correcta: 2
     }
   ],
   interfaces: [],
