@@ -933,6 +933,132 @@ const tests = {
         "Nombre de Fuente de Datos"
       ],
       correcta: 2
+    },
+    {
+      pregunta: "¿Qué herramienta desarrollada por Facebook facilita la creación de documentación estática?",
+      opciones: [
+        "Docusaurus.",
+        "GitBook.",
+        "Read the Docs."
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué instrucción elimina una tabla?",
+      opciones: [
+        "REMOVE",
+        "DELETE",
+        "DROP TABLE"
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Para qué sirve una clave foránea?",
+      opciones: [
+        "Para indexar columnas",
+        "Para cifrar datos",
+        "Para relacionar tablas"
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Para qué se usa un JOIN en SQL?",
+      opciones: [
+        "Combinar datos de varias tablas",
+        "Eliminar registros",
+        "Crear índices"
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué palabra clave elimina duplicados en SELECT?",
+      opciones: [
+        "UNIQUE",
+        "NO_DUPLICATE",
+        "DISTINCT"
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué instrucción SQL se usa para insertar datos?",
+      opciones: [
+        "SELECT",
+        "INSERT INTO",
+        "PUT"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué archivo se utiliza comúnmente para documentar proyectos en GitHub?",
+      opciones: [
+        "INDEX.html.",
+        "DOCS.rst.",
+        "README.md."
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué función se utiliza en PHP para conectar a una base de datos MySQL usando PDO?",
+      opciones: [
+        "mysql_open()",
+        "mysqli_connect()",
+        "new PDO()"
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué funcionalidad permite la integración de GitHub Actions con proyectos?",
+      opciones: [
+        "Diseñar documentación avanzada.",
+        "Automatizar tareas de CI/CD.",
+        "Crear interfaces visuales."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué instrucción actualiza datos existentes?",
+      opciones: [
+        "ALTER",
+        "SET",
+        "UPDATE"
+      ],
+      correcta: 2
+    },
+    {
+      pregunta: "¿Qué lenguaje de marcado es usado para la documentación técnica en GitHub?",
+      opciones: [
+        "HTML.",
+        "Markdown.",
+        "XML."
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué permite el bloque try-catch con PDO?",
+      opciones: [
+        "Formatear texto",
+        "Manejar errores de conexión",
+        "Ejecutar funciones"
+      ],
+      correcta: 1
+    },
+    {
+      pregunta: "¿Qué herramienta facilita la monitorización de métricas de rendimiento en aplicaciones?",
+      opciones: [
+        "Prometheus.",
+        "Grafana.",
+        "SonarQube."
+      ],
+      correcta: 0
+    },
+    {
+      pregunta: "¿Qué tipo de ataque se previene usando sentencias preparadas?",
+      opciones: [
+        "XSS",
+        "CSRF",
+        "Inyección SQL"
+      ],
+      correcta: 2
     }
   ],
   interfaces: [],
