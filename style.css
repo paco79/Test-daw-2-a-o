@@ -7,8 +7,8 @@
   --border: rgba(17, 26, 42, 0.08);
   --primary: #0f6eff;
   --primary-dark: #0b56cd;
-  --danger: #e22944;
-  --success: #2e7d32;
+  --danger: #b71c1c;
+  --success: #0b8a3e;
   --surface: #f9fbff;
 }
 
@@ -80,6 +80,13 @@ p {
 .main-card {
   display: grid;
   gap: 24px;
+}
+
+/* centrar el contenido principal para evitar desplazamiento horizontal */
+.main-card, .pregunta-card {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-panel h2,
@@ -212,15 +219,15 @@ button.ghost:hover,
 }
 
 .opciones-grid button.correcta {
-  background: #ecf9f2 !important;
-  color: #1f6f3b;
-  box-shadow: inset 0 0 0 1px rgba(46, 125, 50, 0.18);
+  background: #e6fff0 !important;
+  color: var(--success);
+  box-shadow: inset 0 0 0 1px rgba(11, 138, 62, 0.16);
 }
 
 .opciones-grid button.incorrecta {
-  background: #fee3e5 !important;
-  color: #9e1f2d;
-  box-shadow: inset 0 0 0 1px rgba(226, 41, 68, 0.18);
+  background: #ffecec !important;
+  color: var(--danger);
+  box-shadow: inset 0 0 0 1px rgba(183, 28, 28, 0.16);
 }
 
 .actions-row {
@@ -245,6 +252,47 @@ button,
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
   color: var(--text);
+}
+
+/* Estadísticas debajo de las respuestas */
+.fixed-stats {
+  position: static;
+  left: auto;
+  transform: none;
+  bottom: auto;
+  width: 100%;
+  z-index: auto;
+  margin-top: 16px;
+}
+
+.resumen {
+  display: grid;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 24px;
+  background: #f2f7ff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.resumen h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.resumen-text {
+  display: grid;
+  gap: 10px;
+}
+
+.resumen-text span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  font-weight: 700;
 }
 
 .stat {
@@ -321,6 +369,20 @@ button,
   background: #fff;
   border: 1px solid rgba(15, 23, 42, 0.06);
   color: var(--muted);
+}
+
+.pregunta-item .item-option.correcta-item {
+  background: #e6fff0;
+  color: var(--success);
+  border-color: rgba(11, 138, 62, 0.14);
+}
+
+.feedback {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(248,248,250,0.9);
+  font-weight: 700;
 }
 
 .oculto {

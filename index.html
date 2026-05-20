@@ -68,24 +68,39 @@
             <h3 id="pregunta"></h3>
 
             <div id="opciones" class="opciones-grid"></div>
+            <div id="feedback" class="feedback oculto"></div>
           </div>
 
           <div class="actions-row">
-            <button class="btn primary" onclick="corregir()">Corregir</button>
+            <button class="btn primary" onclick="reiniciarPregunta()">Reiniciar pregunta para volver a contestar</button>
             <button class="btn secondary" onclick="reiniciarEstadisticas()">Reiniciar estadísticas</button>
           </div>
 
-          <div id="estadisticas" class="stats-row oculto">
+          <div class="actions-row" id="navegacionPreguntas">
+            <button class="btn ghost" onclick="anteriorPregunta()">Anterior</button>
+            <button class="btn ghost" id="botonSiguiente" onclick="siguientePregunta()">Siguiente</button>
+            <button class="btn ghost" onclick="volverMenu()">Volver al menú</button>
+          </div>
+
+          <div id="estadisticas" class="stats-row oculto fixed-stats">
             <span class="stat success">✅ Aciertos: <strong id="aciertos">0</strong></span>
             <span class="stat danger">❌ Fallos: <strong id="fallos">0</strong></span>
             <span class="stat">🎯 Porcentaje: <strong id="porcentaje">0%</strong></span>
             <span class="stat">📄 Total: <strong id="total">0</strong> preguntas</span>
           </div>
 
-          <div class="actions-row">
-            <button class="btn ghost" onclick="anteriorPregunta()">Anterior</button>
-            <button class="btn ghost" onclick="siguientePregunta()">Siguiente</button>
-            <button class="btn ghost" onclick="volverMenu()">Volver al menú</button>
+          <div id="resumenFinal" class="resumen oculto">
+            <h3>Resumen final del test</h3>
+            <div class="resumen-text">
+              <span>Aciertos: <strong id="resumenAciertos">0</strong></span>
+              <span>Fallos: <strong id="resumenFallos">0</strong></span>
+              <span>Porcentaje: <strong id="resumenPorcentaje">0%</strong></span>
+              <span>Total de preguntas: <strong id="resumenTotal">0</strong></span>
+            </div>
+            <div class="actions-row">
+              <button class="btn primary" onclick="reiniciarTest()">Volver a realizar el test</button>
+              <button class="btn ghost" onclick="volverMenu()">Volver al menú principal</button>
+            </div>
           </div>
 
         </div>
